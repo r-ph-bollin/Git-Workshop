@@ -380,7 +380,7 @@ footer {
   .author {
     margin-top: 20px;
     padding: 40px;
-    background-color: black;
+    background-color: #006778;
   }
   .author-intro::after {
     content: "with ❤️ by";

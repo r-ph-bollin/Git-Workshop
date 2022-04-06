@@ -1,0 +1,403 @@
+/* nav {
+    border: 2px solid green;
+}
+
+.nav-left {
+    border: 2px solid green;
+}
+
+.nav-right {
+    border: 2px solid green;
+}
+
+ul {
+    border 2px solid green;
+}
+
+li {
+    border: 2px solid green;
+}
+
+header {
+    border: 2px solid orange;
+}
+
+#duck {
+    border: 2px solid yellow;
+}
+
+.text {
+    border: 2px solid yellow;
+}
+
+.text p {
+    border: 2px solid yellow;
+}
+
+.duck {
+    border: 2px solid yellow;
+}
+
+#emergency {
+    border: 2px solid blue;
+}
+
+.grid-container {
+    border: 2px solid blue;
+
+}
+
+.grid-item {
+    border: 2px solid pink;
+
+}
+
+footer {
+    border: 2px solid red;
+}
+
+.flex-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-item{
+    width: 50%;
+}
+
+
+  nav {
+    border: solid green;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center; 
+}
+
+ul {
+    display: flex;
+    justify-content: space-between; 
+}
+
+#duck {
+    display: flex;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.grid-container {
+    border: solid blue;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 3px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.grid-item {
+    border: solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+} */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* end of CSS Reset */
+
+/* general selectors */
+body{
+    font-family: 'Ubuntu', sans-serif;
+    color: #FFD124;
+    font-size: 25px;
+}
+
+
+
+h1,
+h2 {
+    font-family: 'Rokkitt', serif;
+    
+    font-size: 80px;
+    text-align: center;
+    margin: 40px;
+    font-weight: 500;
+}
+h2 {
+    font-size: 60px;
+  }
+
+/* NAVIGATION */
+  nav {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 30px;
+    background-color: #006778;
+  }
+
+  .nav-left {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-right {
+    width: 80%;
+  }
+
+  ul {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nav-right a {
+    text-decoration-line: none;
+    color: #00AFC1;
+    font-family: "Source Code Pro", monospace;
+    font-size: 27px;
+  }
+
+  .nav-right a:hover {
+    font-style: italic;
+    color: #FFD124;
+  }
+
+  .nav-right a:active {
+    color: #ff0000;
+  }
+
+  li {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 27px;
+  }
+
+
+/*---------------------HEADER-------------------------*/
+
+header {
+  padding-top: 10px;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-bottom: 60px;
+  background-color: #006778;
+}
+#home h1 {
+    color: #00AFC1;
+    animation: unblur 3s 1s 1.5;
+    text-shadow: #FC0 1px 0 10px;
+  }
+
+  #home {
+    transition-property: background-color color;
+    transition-duration: 2s;
+    transition-delay: 0.5s;
+  }
+
+  #home:hover {
+    background-color: #c0c0c0;
+    color: #111111;
+    transition-duration: 1.5s;
+  }
+
+  /*---------------------DEBUGGING-------------------------*/
+
+  #duck {
+    display: flex;
+    background-color: #006778;
+    padding: 50px;
+    transition-property: background-color color;
+    transition-duration: 2s;
+    transition-delay: 0.5s;
+    text-shadow: #FC0 1px 0 10px;
+  }
+  
+  #duck:hover {
+    background-color: #c0c0c0;
+    color: #222222;
+    transition-duration: 1.5s;
+  }
+
+  #duck h2 {
+    color: #00AFC1;
+    font-weight: 400;
+  }
+
+  .text {
+    padding: 20px;
+  }
+  
+  .text p {
+    text-shadow: none;
+  }
+  
+  .duck img {
+    width: 200px;
+  }
+
+  /*---------------------EMERGENCY-------------------------*/
+#emergency {
+    background-color: #006778;
+    padding: 50px 20px;
+  }
+  #emergency h2 {
+    color: #ff00ff;
+  }
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5px;
+    width: 50%;
+    margin: 0 auto;
+  }
+  
+  .grid-item {
+    border: solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+  }
+  
+  .grid-container a {
+    color: #c0c0c0;
+    text-decoration-line: none;
+    transition-property: background-color color font-size;
+    transition-duration: 1.23s;
+    transition-delay: 0s;
+  }
+  
+  .grid-container a:hover {
+    color: #0093AB;
+    font-size: 1.6rem;
+    background-color: #111111;
+  }
+  .grid-container a:active {
+    color: #ff00ff;
+    font-size: larger;
+  }
+
+  /*---------------------FOOTER-------------------------*/
+
+footer {
+    background-color: #006778;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  #contact h2 {
+    color: #00AFC1;
+    text-shadow: #FC0 1px 0 10px;
+  }
+  .submit-form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  
+  .submit-form > *:not(button) {
+    color: white;
+    margin: 10px;
+    background-color: #444444;
+    border: 1px #0093AB solid;
+  }
+  .submit-form > *:focus:not(button) {
+    color: black;
+    background: white;
+  }
+  
+  .submit-form button {
+    border: 2px black solid;
+    background-color: #0093AB;
+    cursor: pointer;
+    color: white;
+    padding: 6px;
+    margin: 0 auto;
+    width: 40%;
+    font-size: 15px;
+  }
+  .submit-form button:hover {
+    background-color: black;
+    color: #FFD124;
+  }
+  .author {
+    margin-top: 20px;
+    padding: 40px;
+    background-color: black;
+  }
+  .author-intro::after {
+    content: "with ❤️ by";
+  }
+  
+  img[alt="github-icon"] {
+    width: 20px;
+    background-color: white;
+  }
+  /*keyframe for animation*/
+  
+  @keyframes unblur {
+    from {
+      text-shadow: 0 0 8px #c0c0c0;
+      color: transparent;
+    }
+    to {
+      text-shadow: 0;
+    }
+  }
